@@ -1,0 +1,61 @@
+.first-screen
+    padding-top: 9px
+    &__company
+        color: #ffffff
+        font-size: 24px
+        font-weight: 300
+        text-align: center
+    &__title
+        margin-top: 26px
+        color: $main-color
+        font-size: 72px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+    &__subtitle
+        margin-top: 9px
+        color: #ffffff
+        font-size: 42px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center
+    &__splitter
+        margin: 0 auto
+        margin-top: 38px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        &::before
+            display: inline-block
+            content: ''
+            width: 35%
+            background-color: #fff
+            height: 1px
+        div
+            display: inline-block
+            background-color: #fff
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            margin: 0 11px
+        &::after
+            display: block    
+            content: ''
+            width: 35%
+            background-color: #fff
+            height: 1px
+    &_opportunities
+        margin-top: 30px
+        display: flex
+        align-items: flex-start
+    &__item
+        &-icon
+            text-align: center
+            height: 63px
+        &-descr
+            margin-top: 13px
+            text-align: center
+            color: #ffffff
+            font-size: 16px
+            font-weight: 300

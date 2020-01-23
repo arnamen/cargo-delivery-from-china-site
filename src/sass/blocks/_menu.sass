@@ -1,0 +1,36 @@
+.menu
+    min-height: 100px
+    display: flex
+    align-items: center
+    &_links-wrapper
+        width: 600px
+        margin-left: 43px
+        margin-right: 30px
+        display: flex
+        justify-content: space-between
+        a
+            color: #ffffff
+            font-size: 15px
+            font-weight: 400
+            border-right: 1px dotted rgba(255, 255, 255, 0.4)
+            padding: 0 13px
+            &:last-child
+                border-right: none
+                padding-right: 0
+            &:first-child
+                padding-left: 0
+            &:hover
+                color: $main-color
+                text-decoration: none
+                border-bottom: 1px solid $main-color
+    &__contacts
+        text-align: right
+        margin-right: 18px
+    &__text
+        color: #ffffff
+        font-size: 14px
+        font-weight: 300
+    &__number
+        color: #ffffff
+        font-size: 19px
+        font-weight: 700
