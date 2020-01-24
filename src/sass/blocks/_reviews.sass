@@ -1,0 +1,61 @@
+.reviews
+    padding: 51px 0 65px 0
+    min-height: 470px
+    position: relative
+    &_carousel
+        max-width: 601px
+        margin: 0 auto
+        margin-top: 31px
+    &__photo
+        width: 114px
+        height: 114px
+        margin: 0 auto
+    &__name
+        margin-top: 19px
+        font-family: "Roboto - Bold"
+        font-size: 18px
+        font-weight: 700
+        text-align: center
+    &__review
+        color: #3a3a3a
+        font-size: 14px
+        font-weight: 300
+        text-align: center
+    &__prev, &__next
+        position: absolute
+        top: 50%
+        left: 41%
+        background: none
+        border: none
+        transform: translateY(-50%)
+        &:focus
+            outline: none
+    &__next
+        right: 41%
+        left: auto
+
+@media ( max-width: 768px)
+    .reviews
+        &__prev
+            left: 37%
+        &__next
+            right: 37%
+
+@media ( max-width: 425px)
+    .reviews
+        &__prev
+            top: 49%
+            left: 28%
+        &__next
+            top: 49%
+            right: 28%
+
+@media ( max-width: 320px)
+    .reviews
+        &__prev
+            top: 51%
+            left: 22%
+        &__next
+            top: 51%
+            right: 22%
+    

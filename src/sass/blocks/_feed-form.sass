@@ -1,0 +1,130 @@
+.feed-form
+    margin-top: 71px
+    min-height: 166px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: rgba(137, 137, 137, 0.5) 1px solid
+    z-index: -1
+    flex-wrap: wrap
+    &__icon
+        width: 124px
+        height: 124px
+        margin: 0 auto
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 50px
+        background-color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        div
+            width: 102px
+            height: 102px
+            border: 1px solid #e93b3b
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+    &_wrapper
+        min-height: 317px
+        padding-bottom: 58px
+        position: relative
+    &__title
+        color: #3a3a3a
+        font-size: 28px
+        font-weight: 400
+        text-align: center
+    &_button-wrapper
+        width: 210px
+        background-color: #fff
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 38px
+    input
+        width: 32%
+        height: 45px
+        border: 1px solid rgba(0, 0, 0, 0.21)
+        background-color: rgb(255, 255, 255)
+        border-radius: 30px
+        padding-left: 28px
+        color: #101010
+        font-size: 13px
+        font-weight: 300
+        &_white-bg
+            background-color: #fff
+        &:focus
+            outline: none
+        &:nth-child(2)
+            margin: 0 5px
+    textarea
+        color: #616467
+        font-size: 13px
+        font-weight: 300
+        margin-top: -10px
+        width: 97%
+        height: 71px
+        border-radius: 9px
+        padding: 10px 25px
+        resize: none
+        &:focus
+            outline: none
+    &-message
+        min-height: 438px
+        background: url(/img/questions/bg.png) center center/cover no-repeat
+        padding: 62px 0 79px 0
+        &_wrapper
+            max-width: 79%
+            margin: 0 auto
+        &__title
+            display: flex
+            align-items: center
+            flex-direction: column
+            height: 68px
+            background-color: #25333c
+            text-align: center
+            color: #ffffff
+            font-size: 19px
+            font-weight: 700
+            padding-top: 13px
+            text-transform: uppercase
+            span
+                color: #ffffff
+                font-size: 14px
+                font-weight: 400
+                text-transform: uppercase
+        &-form
+            min-height: 229px
+            margin-top: 0
+            border: none
+            background-color: rgba(255, 255, 255, .7)
+
+@media ( max-width: 425px)
+    .feed-form
+        min-height: 237px
+        flex-wrap: nowrap
+        flex-direction: column
+        input
+            padding-left: 11px
+            width: 80%
+            &:nth-child(-n+3)
+                margin: 0
+                margin-top: 10px
+        textarea
+            margin-top: 10px
+            width: 80%
+            padding: 10px 8px
+            margin-bottom: 13px
+        &__icon
+            width: 108px
+            height: 70px
+            top: 120px
+            div
+                width: 65px
+                height: 65px
+                img
+                    width: 77%
+        &-message
+

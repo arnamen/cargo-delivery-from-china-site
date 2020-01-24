@@ -34,3 +34,27 @@
         color: #ffffff
         font-size: 19px
         font-weight: 700
+
+@media ( max-width: 1024px)
+    .menu
+        &__contacts
+            margin-right: 10px
+            width: 158px
+        &__number
+            font-size: 16px
+        &_links-wrapper
+            margin: 0 10px
+            width: 329px
+            flex-wrap: wrap
+            justify-content: space-around
+            a
+                padding: 0
+                padding-right: 6px
+                border: none
+
+@media ( max-width: 425px)
+    .menu
+        &_links-wrapper
+            display: none
+    
+    

@@ -15,7 +15,42 @@
             color: #3a3a3a
             font-size: 14px
             font-weight: 300
+            .new-line
+                display: none
             span
                 color: $main-color
                 font-size: 16px
                 font-weight: 700
+
+@media ( max-width: 425px)
+    .advantages
+        &__item
+            display: block
+            margin-top: 36px
+            &-descr
+                margin-top: 5px
+                width: 171px
+            &-icon
+                display: block
+                margin: 0 auto
+            img
+                width: 60px
+                height: 60px
+                display: block
+                margin: 0 auto
+
+@media ( max-width: 425px)
+    .advantages
+        &__item
+            &-descr
+                width: 155px
+        
+@media ( max-width: 320px)
+    .advantages
+        &__item
+            &-descr
+                width: 130px
+                .new-line
+                    display: inline
+
+    

@@ -1,0 +1,61 @@
+.hamburger
+    width: 30px
+    height: 30px
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 99
+    transition: 0.6s all
+    &__line
+        position: absolute
+        width: 20px
+        height: 1px
+        background-color: #fff
+        margin-top: 2px
+        transition: 0.6s all
+        &:nth-child(1)
+            top: 9px
+        &:nth-child(2)
+            top: 13px
+        &:nth-child(3)
+            top: 18px
+    &_active
+        .hamburger__line
+            &:nth-child(1)
+                top: 13px
+                transform: rotate(45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                top: 13px
+                transform: rotate(-45deg)
+    &_nodisplay
+        display: none
+
+@media ( max-width: 425px)
+    .hamburger
+        &_nodisplay
+            display: block
+    
+                
+            
+
+.hamburger_menu
+    z-index: 99
+    position: fixed
+    left: -60%
+    height: 100%
+    width: 60%
+    transition: 0.6s all
+    background-color: rgba(0,0,0,0.6)
+    &_active
+        left: 0
+    .hamburger__link
+        margin-top: 20px
+        &:first-child
+            margin-top: 50%
+        a
+            color: #fff
+            text-decoration: none
+            display: block
+            text-align: center

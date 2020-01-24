@@ -3,6 +3,9 @@
     &_wrapper
         margin-top: 37px
         display: flex
+    &__item
+        img
+            width: 100%
     &__subtitle
         text-align: center
         margin-top: 27px
@@ -15,3 +18,19 @@
         color: #3a3a3a
         font-size: 14px
         font-weight: 300
+
+@media ( max-width: 425px)
+    .our-work
+        &_wrapper
+            flex-wrap: wrap
+        &__item
+            display: flex
+            flex-direction: column
+        &__img
+            order: 3
+        &__subtitle
+            order: 1
+        &__descr
+            order: 2
+
+                        

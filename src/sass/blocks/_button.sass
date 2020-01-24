@@ -22,3 +22,29 @@
     &_prices
         display: block
         margin: 0 auto
+    &_feed-form
+        display: block
+        margin: 0 auto  
+        &-mt-m15
+            margin-top: -15px
+    &_footer
+        margin-top: 10px
+
+@media ( max-width: 1024px)
+    .button
+        &_footer
+            margin-top: 30px
+
+@media ( max-width: 425px)
+    .button
+        &_feed-form
+            &-mt-m15
+                margin-top: 0
+                margin-bottom: 10px
+
+@media ( max-width: 320px)
+    .button
+        &_footer
+            width: 135px
+            margin-top: 10px
+    
